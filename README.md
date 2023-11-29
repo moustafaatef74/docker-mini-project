@@ -1,8 +1,6 @@
 # Tech World With Nana (Docker)
 
-1)
-
-Containers are portable pack dependencies and configurations
+1) Containers are portable pack dependencies and configurations
 
 Portable artifact easily shared and moved around
 
@@ -15,21 +13,21 @@ Make development and deployment more effiencent
 
 ## How cantainer improves development process?
 ### Before?
-	### install most of the service on the each os
-	### Multiple steps where something might go wrong (due to the no. of steps involved)
+### install most of the service on the each os
+### Multiple steps where something might go wrong (due to the no. of steps involved)
 ## After
-	### Own isolated environment
-	### packed with all needed configurations
-	### one command to install the app
-	### run the same app with 2 different versions
+### Own isolated environment
+### packed with all needed configurations
+### one command to install the app
+### run the same app with 2 different versions
 
 ## How containers improves deployment process
 ### Before
-	### development team gives artifacts and textual guide of deployment to operations team to deployment
-	### rasies dependency version conflicts and misunderstandings
+### development team gives artifacts and textual guide of deployment to operations team to deployment
+### rasies dependency version conflicts and misunderstandings
 ### After
-	### Developers and operations working in one team to package the application in a container
-	### No environmental configurations need on the server (except docker runtime)
+### Developers and operations working in one team to package the application in a container
+### No environmental configurations need on the server (except docker runtime)
 	
 ## other container technologies?
 ### cotainerd, cri-o
@@ -38,9 +36,9 @@ Make development and deployment more effiencent
 
 ## What is a Container?
 ### 
-	### Layers of images
-	### Mostly linux base image, because small in size (base image)
-	### application image on top (e.g. nginx)
+### Layers of images
+### Mostly linux base image, because small in size (base image)
+### application image on top (e.g. nginx)
 	
 
 ## public repos does not require login or authentication
@@ -76,43 +74,43 @@ docker run postgres:10.10
 
 ## Docker vs VMs
 
-### Operating systems have 2 layers 
-	Applications (layer 2)
-	OS Kernel (layer 1)
-	Hardware
+## Operating systems have 2 layers 
+### Applications (layer 2)
+### OS Kernel (layer 1)
+### Hardware
 	
-### Docker
-	Applications (layer 1)
-	OS Kernel
-	Hardware
+## Docker
+### Applications (layer 1)
+### OS Kernel
+### Hardware
 
 ## Size of docker image is much smaller
 ## Docker containers start and run much faster
 ## VM of any OS can run on any host
-	### you can't run linux images on windows OS (windows 10 and before)
-	### a workaround is using docker toolbox which abstracts the kernel to make the host run different docker images
+### you can't run linux images on windows OS (windows 10 and before)
+### a workaround is using docker toolbox which abstracts the kernel to make the host run different docker images
 	
 4) docker architecture and its componenets
 
 ## when you install docker you install docker engine which has 3 parts:
-	### Docker Server
-		### Pulling Images
-		### Managing Containers
-	### Docker API
-		### Interacting with docker server
-	### Docker CLI
-		### Command line interface to execute docker commands
+### Docker Server
+#### Pulling Images
+#### Managing Containers
+### Docker API
+#### Interacting with docker server
+### Docker CLI
+#### Command line interface to execute docker commands
 
 ## Docker Server has 3 components:
-	### Container runtime
-		### pulling images
-		### managing container lifecycle
-	### Volumes
-		### presisting data
-	### Network
-		### configuring netwotk for conatiner communication
-	### Build images
-		### build own docker images
+### Container runtime
+#### pulling images
+#### managing container lifecycle
+### Volumes
+#### presisting data
+### Network
+#### configuring netwotk for conatiner communication
+### Build images
+#### build own docker images
 		
 ## Docker is very powerful (many functionality in 1 application)
 
@@ -122,10 +120,10 @@ docker run postgres:10.10
 
 ## Container port vs Host port
 ### 
-	### Multiple containers can run on the same hosts
-	### You laptop only has certian ports available
-	### conflict when same port on same machine
-	### you can bind host ports to container ports (ex. 3001 on machine to 3000 on container)
+#### Multiple containers can run on the same hosts
+#### You laptop only has certian ports available
+#### conflict when same port on same machine
+#### you can bind host ports to container ports (ex. 3001 on machine to 3000 on container)
 	
 6) debuging docker containers
 ## basic docker commands
