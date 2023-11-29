@@ -57,10 +57,9 @@ docker ps
 
 ## Image vs container
 ### Image
-        image is the actual package (containing the app, dependencies, start script)
+#### image is the actual package (containing the app, dependencies, start script)
 ### container
-        is when i pull the image and start it
-        conatiner environmentis started
+#### is when i pull the image and start it (conatiner environmentis started)
 
 ```
 docker run postgres:10.10
